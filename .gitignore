@@ -1,1 +1,6 @@
-/build
+/build/
+/node_modules/
+/.git/
+/**/package-lock.json
+/**/Thumbs.db
+/**/*.DS_Store
