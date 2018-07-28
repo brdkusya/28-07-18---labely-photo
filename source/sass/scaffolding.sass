@@ -1,0 +1,53 @@
++font-face("roboto-d", "../fonts/RobotoRegular/RobotoRegular")
++font-face("roboto-d", "../fonts/RobotoLight/RobotoLight", 300)
++font-face("roboto-d", "../fonts/RobotoBold/RobotoBold", bold)
+
++font-face("roboto-c", "../fonts/RobotoCondensedRegular/RobotoCondensedRegular")
++font-face("roboto-c", "../fonts/RobotoCondensedLight/RobotoCondensedLight", 300)
++font-face("roboto-c", "../fonts/RobotoCondensedBold/RobotoCondensedBold", bold)
+
+body
+	min-width: 320px
+	margin: 0
+	padding: 0
+
+	font-size: 16px
+	line-height: 1.5
+	font-family: $d-font
+	color: $text
+	font-style: normal
+
+.wrapper
+	padding-left: 10px
+	padding-right: 10px
+
+img
+	max-width: 100%
+	height: auto
+
+.visualy-hidden:not(:focus):not(:active)
+	position: absolute
+
+	width: 1px
+	height: 1px
+	margin: -1px
+	padding: 0
+	border: 0
+
+	white-space: nowrap
+
+	clip-path: inset(100%)
+	clip: rect(0 0 0 0)
+	overflow: hidden
+
+@media (min-width: $tablet-width)
+	.wrapper
+		width: 640px
+		margin-right: auto
+		margin-left: auto
+		padding-right: 10px
+		padding-left: 10px
+
+@media (min-width: $desktop-width)
+	.wrapper
+		width: 960px
