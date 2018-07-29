@@ -1,0 +1,15 @@
+.bottom-navigation
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 50px
+	margin-bottom: 60px
+
+.bottom-navigation__list
+	display: flex
+	flex-direction: column
+	@include reset-list
+
+@media (min-width: $tablet-width)
+	.bottom-navigation__list
+		flex-direction: row

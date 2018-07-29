@@ -1,0 +1,27 @@
+.top-navigation
+	padding-top: 20px
+	padding-bottom: 20px
+
+.top-navigation__list
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	height: 90vh
+	max-height: 450px
+	@include reset-list
+
+@media (min-width: $tablet-width)
+	.top-navigation
+		padding-top: 50px
+		padding-bottom: 60px
+
+	.top-navigation__list
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+		align-items: flex-end
+		height: auto
+
+	.top-navigation__toggle
+		display: none
